@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="m-8"> 
+     <!-- Rounded /-sm,-xl.. full -border-radius -->
+     <!-- Rounded-e / s / t / b -end/start/top/bottom-->
+
+   <button class="rounded-bl-3xl bg-gray-300 border-2 border-gray-800 px-4 py-2 mb-4 rounded">
+  Comprar Produto
+</button>
+
+
+<button class="bg-gray-300 border-2 border-gray-800 px-4 py-2 mb-4 rounded">
+  Comprar Produto
+</button>
+<br />
+<button
+  class="bg-gray-300 border-2 border-gray-800 px-4 py-2 mb-4 rounded-e-2xl"
+>
+  Comprar Produto
+</button>
+<br />
+<button
+  class="bg-gray-300 border-2 border-gray-800 px-4 py-2 mb-4 rounded-full"
+>
+  Comprar Produto
+</button>
+
+
+<!-- =========== Display =============== -->
+
+<!-- block / inline / inline-block - display: block -->
+<!-- grid / flex / inline-flex / inline-grid - display: grid -->
+
+ <div>
+      <a href="/" class="bg-blue-200 py-2 px-4 inline-block">Contato</a>
+      <a href="/" class="bg-blue-200  py-2 px-4 inline-block">Sobre</a>
+      <a href="/" class="bg-blue-200  py-2 px-4 inline-block">Saiba Mais</a>
+</div>
+<!-- =========== Display =============== -->
+
+<!-- hidden - display: none; -->
+<!-- invisible - visibility: hidden; -->
+<a href="#principal">Pular para o conteúdo</a>
+<nav class="mb-96" class:="sr-only">
+  <button id="menuButton" class="bg-purple-300 px-4 py-2">Menu</button>
+  <ul id="menu" class="hidden">
+    <li>Produtos</li>
+    <li>Sobre</li>
+    <li>Contato</li>
+  </ul>
+</nav>
+<p id="principal">meu conteudo</p>
+<script>
+     menuButton?.addEventListener("click", () => {
+       menu.classList.toggle("hidden");
+     });
+</script>
+
+
+<!-- ================== Position ================= -->
+
+
+<!-- absolute / relative / sticky / fixed - position -->
+
+
+<nav class="flex justify-between bg-gray-200 p-4  sticky top-0">
+     <!-- essas configurações do nav farão com que ela mantenha  a nav fixa -->
+  <a href="/">Floresta</a>
+  <ul class="flex gap-4">
+    <li><a href="/">Produtos</a></li>
+    <li><a href="/">Sobre</a></li>
+    <li><a href="/">Contato</a></li>
+  </ul>
+</nav>
+<div class="flex gap-4">
+<div class="size-20 rounded bg-lime-950">
+     <div class="bg-lime-300 h-3 w-12 rounded-full absolute  -rigth-8"></div>
+</div>
+<div class="size-20 rounded bg-lime-950"></div>
+</div>
+
+<div class="bg-black/50 absolute inset-0 fixed z-40" ></div>
+<p class="my-96 h-96">Conteúdo</p>
+
+</body>
+</html>

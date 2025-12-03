@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-8">
+   <!-- Align/Justify Items -->
+    <section class="items-start justify-items-center   grid grid-cols-2 h-96 gap-4  bg-[url('./img/grid.svg')]">
+     <div class=" bg-violet-900 p-8 rounded">
+          <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+          <ul class="text-white list-disc">
+               <li>300 Acessos</li>
+               <li>1200 Requests</li>
+               <li>Suporte Vitalício</li>
+               <li>Acesso Completo</li>
+               <li>Proteção Total </li>
+          </ul>
+          <button class="bg-violet-300 py-1 px-4 rounded mt-4 text-white" >Assinar Premium</button>
+     </div>
+     <div class="bg-gray-200 p-8  rounded">
+          <h2 class="font-bold mb-4">Plano Básico</h2>
+          <ul class="list-disc">
+               <li>300 Acessos</li>       
+               <li>Acesso Completo</li>
+               <li>Proteção Total </li>
+          </ul>
+           <button class="bg-gray-400 text-white py-1 px-4 rounded mt-4 text-white" >Assinar Premium</button>
+     </div>
+    </section>
+    <!--Align/Justify Self -->
+
+    <!-- self- (align), alinha o item no eico vertical(y) -->
+    <!-- justify-self, justifica o item no eixo x (horizontal) -->
+    <!-- place-self, alinha/justifica o item  -->
+    <!-- start,center,end,stretch -->
+    <!-- OBS: o alinhamento/justificaçõa só funciona quando existe espaço vazio para alinhar.  -->
+
+
+     <section class=" grid grid-cols-2 h-96 gap-4  bg-[url('./img/grid.svg')]">
+     <div class=" bg-violet-900 p-8 rounded">
+          <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+          <ul class="text-white list-disc">
+               <li>300 Acessos</li>
+               <li>1200 Requests</li>
+               <li>Suporte Vitalício</li>
+               <li>Acesso Completo</li>
+               <li>Proteção Total </li>
+          </ul>
+          <button class="bg-violet-300 py-1 px-4 rounded mt-4 text-white" >Assinar Premium</button>
+     </div>
+     <div class="bg-gray-200 p-8  rounded justify-self-start">
+          <h2 class="font-bold mb-4">Plano Básico</h2>
+          <ul class="list-disc">
+               <li>300 Acessos</li>       
+               <li>Acesso Completo</li>
+               <li>Proteção Total </li>
+          </ul>
+           <button class="bg-gray-400 text-white py-1 px-4 rounded mt-4 text-white" >Assinar Premium</button>
+     </div>
+    </section>
+
+    <section class="h-96 grid grid-cols-2 gap-4 bg-[url('./img/grid.svg')]">
+  <div class="bg-violet-900 p-8 rounded self-end justify-self-start">
+    <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+    <ul class="list-disc text-white">
+      <li>300 Acessos</li>
+      <li>1200 Requests</li>
+      <li>Suporte Vitalício</li>
+      <li>Acesso Completo</li>
+      <li>Proteção Total</li>
+    </ul>
+    <button class="bg-violet-200 text-violet-900 py-1 px-4 rounded mt-4">
+      Assinar Premium
+    </button>
+  </div>
+  <div class="bg-gray-200 p-8 rounded place-self-center">
+    <h2 class="font-bold mb-4">Plano Básico</h2>
+    <ul class="list-disc">
+      <li>150 Acessos</li>
+      <li>500 Requests</li>
+    </ul>
+    <button class="bg-gray-300 text-gray-900 py-1 px-4 rounded mt-4">
+      Assinar Básico
+    </button>
+  </div>
+</section>
+<!-- Align/justify content -->
+ <section class="flex h-96 gap-4 bg-[url('./img/grid.svg')] justify-center">
+  <div class="bg-violet-900 p-8 rounded">
+    <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+    <ul class="list-disc text-white">
+      <li>300 Acessos</li>
+      <li>1200 Requests</li>
+      <li>Suporte Vitalício</li>
+      <li>Acesso Completo</li>
+      <li>Proteção Total</li>
+    </ul>
+    <button class="bg-violet-200 text-violet-900 py-1 px-4 rounded mt-4">
+      Assinar Premium
+    </button>
+  </div>
+  <div class="bg-gray-200 p-8 rounded content-end">
+    <h2 class="font-bold mb-4">Plano Básico</h2>
+    <ul class="list-disc">
+      <li>150 Acessos</li>
+      <li>500 Requests</li>
+    </ul>
+    <button class="bg-gray-300 text-gray-900 py-1 px-4 rounded mt-4">
+      Assinar Básico
+    </button>
+  </div>
+</section>
+<section
+  class="grid grid-cols-[auto_auto] h-96 gap-4 bg-[url('./img/grid.svg')] place-content-center"
+>
+  <div class="bg-violet-900 p-8 rounded">
+    <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+    <ul class="list-disc text-white">
+      <li>300 Acessos</li>
+      <li>1200 Requests</li>
+      <li>Suporte Vitalício</li>
+      <li>Acesso Completo</li>
+      <li>Proteção Total</li>
+    </ul>
+    <button class="bg-violet-200 text-violet-900 py-1 px-4 rounded mt-4">
+      Assinar Premium
+    </button>
+  </div>
+  <div class="bg-gray-200 p-8 rounded">
+    <h2 class="font-bold mb-4">Plano Básico</h2>
+    <ul class="list-disc">
+      <li>150 Acessos</li>
+      <li>500 Requests</li>
+    </ul>
+    <button class="bg-gray-300 text-gray-900 py-1 px-4 rounded mt-4">
+      Assinar Básico
+    </button>
+  </div>
+</section>
+
+
+</body>
+</html>
