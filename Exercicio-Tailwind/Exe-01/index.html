@@ -11,31 +11,46 @@
      <!--  Coloque flex no elemento QUE POSSUI vários elementos dentro (ul)
 
 Assim o flex pode alinhar, espaçar ou mudar layout. -->
-    <header class="flex justify-between items-center p-4">
+    <header class="flex justify-between items-center p-4 mt-5">
   <h1 class="text-xl font-bold">WALLS</h1>
   <nav>
     <ul class="flex gap-6">
       <li><a href="">Black Friday</a></li>
-      <li><a href="">Lançamentos</a></li>
+      <li><a href="">Marcas</a></li>
       <li><a href="">Masculino</a></li>
       <li><a href="">Feminino</a></li>
     </ul>
   </nav>
 </header>
-<section class="grid grid-cols-2  bg-gray-100 gap-8 p-8  max-h-[400px]" >
-     <div class=" h-full">
-          <img class="object-cover  h-full w-full" src="img/tenis-nike-brsb.avif" alt="">
+<section class="grid grid-cols-2  bg-gray-100 gap-4 p-8 mt-5 max-h-96" >
+     <div class=" h-96 ">
+          <img class="object-cover  h-80 w-full" src="img/nike/tenis-nike-brsb.avif" alt="">
      </div>
 
     
-     <div class="content-center">
-          <h1 class="col-span-full bg-black text-white text-xl text-center p-2 ">Lançamento </h1>
-          <h3 class="">Nike SB</h3>
+     <div class="grid p-10">
+          <h1 class="col-span-full  text-red-600 text-3xl text-center">Nike SB </h1>
+          <h3 class=""></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolore? Natus temporibus nesciunt nemo excepturi suscipit delectus doloremque, ad quaerat esse distinctio repellendus officiis neque autem perferendis itaque! Officiis, dolor!</p>
-          <button class="bg-black text-white px-4 py-2 mt-4 col-span-full col-end-3">saiba mais</button>
+          <button class="bg-black text-white px-4 py-2 mt-4  cursor-pointer ">saiba mais</button>
      </div>
+</section>
+<div class="text-center p-3 ">
+     <h1 class="text-2xl">NIKE</h1>
+</div>
+<section class="grid grid-cols-3 gap-6 *:p-4">
+    
+       <div class="grid ">
+          <img src="img/nike/icone-air-force-1.avif" alt="">
+       </div>
 
-  
+     <div class="grid ">
+          <img src="img/nike/icone-dunk.avif" alt="">
+     </div>
+     <div class="grid "><img src="img/nike/icone-air-jordan.avif" alt=""></div>
+</section>
+<section class="grid grid    ">
+
 </section>
 </body>
 </html>
