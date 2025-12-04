@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+     <!--  Coloque flex no elemento QUE POSSUI vários elementos dentro (ul)
+
+Assim o flex pode alinhar, espaçar ou mudar layout. -->
+    <header class="flex justify-between items-center p-4">
+  <h1 class="text-xl font-bold">WALLS</h1>
+  <nav>
+    <ul class="flex gap-6">
+      <li><a href="">Black Friday</a></li>
+      <li><a href="">Lançamentos</a></li>
+      <li><a href="">Masculino</a></li>
+      <li><a href="">Feminino</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="grid grid-cols-2  bg-gray-100 gap-8 p-8  max-h-[400px]" >
+     <div class=" h-full">
+          <img class="object-cover  h-full w-full" src="img/tenis-nike-brsb.avif" alt="">
+     </div>
+
+    
+     <div class="content-center">
+          <h1 class="col-span-full bg-black text-white text-xl text-center p-2 ">Lançamento </h1>
+          <h3 class="">Nike SB</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolore? Natus temporibus nesciunt nemo excepturi suscipit delectus doloremque, ad quaerat esse distinctio repellendus officiis neque autem perferendis itaque! Officiis, dolor!</p>
+          <button class="bg-black text-white px-4 py-2 mt-4 col-span-full col-end-3">saiba mais</button>
+     </div>
+
+  
+</section>
+</body>
+</html>
